@@ -17,3 +17,12 @@ func createBill(name string) bill {
 	}
 	return b
 }
+
+func (b *bill) addTip(t float64) bill{
+	b.tip = b.tip + t;
+	return *b
+}
+
+func (b *bill) addToCart(name string, price float64){
+	b.cart[name] = price
+}
