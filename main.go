@@ -8,5 +8,7 @@ func main() {
 	myBill.addToCart("Juice", 9.44)
 	myBill.addToCart("orange", 5.99)
 	myBill.addTip(3.5)
+	fmt.Println(myBill.formatBill())
 	fmt.Println(myBill)
+
 }
